@@ -1,64 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Specifies the document type and version of HTML -->
-    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 for better compatibility -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering on different screen sizes -->
-    <title>Alex's Sport & Sneaker Lounge</title> <!-- Title displayed in the browser tab -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Sport & Sneaker Lounge</title>
     <link rel="icon" href="images/icon.jpg" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header section of the page -->
-    <header>
-        <img src="images/Logo.jpg" alt="Alex's Logo" width="50" height="50" style="vertical-align: middle;">
-        <h1>Welcome to Alex's Sport & Sneaker Lounge</h1>
-        <nav>
-            <!-- Navigation menu -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark" style="background-color: #415a77;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.jpg" alt="Alex's Logo" width="50" height="50"> Alex's Lounge
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="text-white text-center py-5" style="background-color: #415a77;">
+        <div class="container">
+            <h1>Welcome to Alex's Sport & Sneaker Lounge</h1>
+            <p>Discover the newest styles in shoes and clothing</p>
+        </div>
     </header>
-    <!-- Main content of the page -->
-    <main>
-        <section>
-            <h2>Latest Trends</h2>
-            <p>Discover the newest styles in shoes and clothing, tailored to your fashion needs.</p>
-            <!-- List of latest trends -->
-            <ul>
-                <li>Stylish Sneakers</li>
-                <img src="images/Stan.jpg" alt="Stan Smith" width="20%">
-                <li>Running Shoes</li>
-                <img src="images/ultraboost.jpg" alt="Running" width="20%">
-                <li>Sports Wear</li>
-                <img src="images/Sportswear.jpg" alt="Sports Wear" width="20%">
-                <li>Casual Wear</li>
-                <img src="images/Casual.jpg" alt="Casual Wear" width="20%">
-            </ul>
-        </section>
-        <section>
-            <h2>Featured Products</h2>
-            <!-- First featured product -->
-            <article>
-                <h3>Trendy Sneakers</h3>
-                <img src="images/Sneaker.jpg" alt="Sneakers" width="20%">
-                <p>Perfect for both casual and sporty looks.</p>
-                
-            </article>
-            <!-- Second featured product -->
-            <article>
-                <h3>Fleece Jackets</h3>
-                <img src="images/Fleece.png" alt="Fleece" width="20%">
-                <p>Add a warm piece to your wardrobe.</p>
-            </article>
-        </section>
-    </main>
-    <!-- Footer section of the page-->
-    <footer>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Latest Trends</h2>
+                <p>Find the latest fashion in sportswear and sneakers.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="images/Stan.jpg" class="img-fluid rounded" alt="Stan Smith">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/ultraboost.jpg" class="img-fluid rounded" alt="Running Shoes">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Featured Products -->
+    <div class="container my-5">
+        <h2 class="text-center">Featured Products</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <img src="images/Sneaker.jpg" class="card-img-top" alt="Sneakers">
+                    <div class="card-body">
+                        <h5 class="card-title">Trendy Sneakers</h5>
+                        <p class="card-text">Perfect for both casual and sporty looks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <img src="images/Fleece.png" class="card-img-top" alt="Fleece Jacket">
+                    <div class="card-body">
+                        <h5 class="card-title">Fleece Jackets</h5>
+                        <p class="card-text">Add a warm piece to your wardrobe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-white text-center py-3" style="background-color: #415a77;">
         <p>&copy; 2025 Alex's Sport & Sneaker Lounge. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS Bundle (for responsive features, no extra JS needed) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
