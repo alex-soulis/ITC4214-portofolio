@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 10%;
+}
+
+/* Header */
+header {
+    text-align: center; /* Center align the header content */
+    background-color: #415a77; /* Keep the existing blue background */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding for spacing */
+    margin-bottom: 20px; /* Space below the header */
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    gap: 10px; /* Space between the logo and the title */
+}
+
+header img {
+    width: 50px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain the logo's aspect ratio */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin from the title */
+    font-size: 1.8rem; /* Adjust the title font size */
+}
+header p {
+    font-size: 1.2rem;
+}
+
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #415a77;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #778da9;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #1b263b;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Featured Products & Images */
+article {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+article p {
+    font-size: 1rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #416881;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #778da9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:#415a77;
+    color: white;
+    margin-top: 20px;
+}

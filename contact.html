@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Alex's Sport & Sneaker Lounge</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="images/icon.jpg" type="image/png">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    
+    <header>
+        <img src="images/Logo.jpg" alt="Alex's Logo" width="50" height="50" style="vertical-align: middle;">
+        <h1>Contact Alex's Sport & Sneaker Lounge</h1>
+       
+    </header>
+    <!-- Main content section -->
+     <section>
+        <p>We would love to hear from you! Feel free to reach out to us through any of the following methods:</p>
+     </section>
+    <section>
+        <!-- Contact details -->
+        <h2>Contact Information</h2>
+        <p>Email: support@alexsport.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 Alex Avenue, AlexCity, PostC 56789</p>
+
+        <!-- Contact form for sending messages -->
+        <h2>Send Us a Message</h2> 
+        <form action="mailto:alexander_soulis@hotmail.com" method="post" enctype="text/plain">
+            <!-- 
+                - action="mailto:alexander_soulis@hotmail.com": 
+                Specifies that the form data will be sent via email to the provided address (alexander_soulis@hotmail.com). 
+                When the user submits the form, their default email client will open with the form data filled in.
+
+                - method="post": 
+                Defines the HTTP method used to send the form data. 
+                "POST" is used here, which sends the data as part of the request body, rather than appending it to the URL.
+
+                - enctype="text/plain": 
+                Specifies the encoding type for the form data. 
+                "text/plain" sends the data as plain text, making it simple and readable in the email body.
+            -->
+            <label for="name">Name:</label> <!-- Input field for the user's name -->
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label> <!-- Input field for the user's e-mail -->
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br> <!-- Textarea for the user's message-->
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br> <!-- Multi-line input for the message, required field -->
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Alex's Sport & Sneaker Lounge. All rights reserved.</p>
+    </footer>
+</body>
+</html>
